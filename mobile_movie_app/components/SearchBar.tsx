@@ -1,6 +1,6 @@
-import { icons } from "@/constants/icons";
-import React from "react";
 import { Image, TextInput, View } from "react-native";
+
+import { icons } from "@/constants/icons";
 
 interface Props {
   placeholder: string;
@@ -21,8 +21,8 @@ const SearchBar = ({ placeholder, value, onChangeText, onPress }: Props) => {
       <TextInput
         onPress={onPress}
         placeholder={placeholder}
-        value={""}
-        onChangeText={() => {}}
+        value={value}
+        onChangeText={onChangeText}
         className="flex-1 ml-2 text-white"
         placeholderTextColor="#A8B5DB"
       />
